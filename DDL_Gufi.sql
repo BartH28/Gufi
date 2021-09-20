@@ -1,7 +1,7 @@
-CREATE DATABASE GUFI
+CREATE DATABASE GUFI_TARDE
 GO
 
-USE GUFI
+USE GUFI_TARDE
 GO
 
 CREATE TABLE tipoUsuario(
@@ -41,7 +41,7 @@ senha VARCHAR(10) NOT NULL CHECK( len(senha) >= 8),
 );
 GO	
 
-DROP TABLE evento
+--DROP TABLE evento
 
 CREATE TABLE evento(
 idEvento INT PRIMARY KEY IDENTITY,
@@ -54,7 +54,7 @@ acessolivre BIT DEFAULT(1) NOT NULL
 );
 GO	
 
-drop table presenca
+--drop table presenca
 
 CREATE TABLE presenca(
 idpresenca INT PRIMARY KEY IDENTITY,
